@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Michael Obosu</title>
+    <meta name="description" content="Learn more about Michael Obosu — multidisciplinary creative, UI/UX designer, web developer, and founder of ObviousAesthetics.">
+
+    <!-- Google Fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="page-nav">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html"><img src="img/logo.png" class="logo" alt="Michael Obosu Logo" width="130" height="40"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active-nav">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <p class="page-tag">Who I Am</p>
+            <h1>About <span>Me</span></h1>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="about-page-section">
+        <div class="container">
+            <div class="about-page-grid">
+                <!-- Image column -->
+                <div class="about-img-col">
+                    <div class="img-frame">
+                        <img src="img/yellow.png"
+                              alt="Michael Obosu — Graphic Designer, Web Developer & Data Scientist"
+                             loading="lazy"
+                             decoding="async"
+                             width="360">
+                        <div class="img-badge"><i class="fas fa-star"></i> 9+ Years Experience</div>
+                    </div>
+                    <div class="about-quick-facts">
+                        <div class="fact">
+                            <span class="fact-number">50+</span>
+                            <span class="fact-label">Projects Completed</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-number">30+</span>
+                            <span class="fact-label">Happy Clients</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-number">3</span>
+                            <span class="fact-label">Core Skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text column -->
+                <div class="about-text-col">
+                    <h2 class="sub-title">Michael <span style="color:#ffc300">Obosu</span></h2>
+                    <p class="about-role"><i class="fas fa-paintbrush"></i> Graphics Designer &amp; Web Developer</p>
+
+                    <p class="about-bio">
+                        I am a multidisciplinary creative and the founder of <strong>ObviousAesthetics</strong>,
+                        blending classical artistic training with data-driven technical rigor. By merging visual
+                        storytelling with analytical precision, I have led UI architecture for platforms like
+                        <strong>Ghana Transit Hub</strong> and <strong>RideMe</strong> to create designs that
+                        perfectly balance aesthetic excellence with functional performance.
+                    </p>
+                    <p class="about-bio">
+                        My journey started in the print world, where I developed a sharp eye for typography,
+                        colour theory, and layout hierarchy. Over time, I transitioned into the digital space
+                        and fell in love with building interfaces that do not just look great — they feel intuitive
+                        and solve real problems for real people.
+                    </p>
+                    <p class="about-bio">
+                        Today I work with startups, small businesses, and creatives across West Africa to bring
+                        their brands to life online. Whether it is a pixel-perfect Figma prototype, a fully
+                        responsive web application, or a bold brand identity, I bring the same obsessive attention
+                        to detail to every project.
+                    </p>
+
+                    <!-- Tabs -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Design</span>Designing intuitive Web &amp; App interfaces with a strong focus on user research, wireframing, and high-fidelity Figma prototypes.</li>
+                            <li><span>Web Development</span>Building responsive, high-performance web applications using HTML5, CSS3, JavaScript, and modern frameworks.</li>
+                            <li><span>Graphic Design</span>Creating compelling brand identities, marketing materials, and visual content for print and digital media.</li>
+                            <li><span>Data Science</span>Leveraging data insights to validate design decisions and improve product performance (ALX Ghana — In Progress).</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 – Current</span>Freelance Graphics Designer &amp; IT Officer — Self Employed. Leading UI/UX design for multiple client projects including Ghana Transit Hub and RideMe.</li>
+                            <li><span>2019 – 2020</span>IT Officer / Instructor — Juliefos Marine Services and Business Centre. Managed ICT infrastructure and delivered training programs.</li>
+                            <li><span>2017 – 2018</span>Graphic Designer — Kenny Internet Café &amp; Multimedia. Produced print-ready artwork for marketing and branding clients.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2026 – In Progress</span>Certificate in Data Science — ALX Ghana.</li>
+                            <li><span>2025 – 2026</span>Diploma in Information Technology Support and Security — Alison.</li>
+                            <li><span>2025 – 2026</span>Certificate in The Ultimate 2025 Fullstack Web Development Bootcamp — Udemy.</li>
+                            <li><span>2022 – 2024</span>Certificate in The Complete 2020 Fullstack Web Developer — Udemy.</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="img/Michael%20Obosu%20Resume%20SkillBloom.pdf" download class="btn btn2"><i class="fas fa-download"></i> Download Resume</a>
+                        <a href="index.html#contact" class="btn"><i class="fas fa-envelope"></i> Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="page-footer">
+        <p>Copyright &copy; Michael Obosu 2026.</p>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="pages.js"></script>
+
+</body>
+</html>
